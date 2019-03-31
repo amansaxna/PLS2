@@ -1,0 +1,169 @@
+	<!--
+	PLS2
+	
+	-->
+<!DOCTYPE html>
+<html lang="US-en">
+<head>
+	<title>PLS2 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style1.css">
+	<script src="js/userSelect.js"></script>
+	<script src="js/script1.js"></script>
+	<meta charset="UTF-8">
+ </head>
+<body>
+	<div id="navbar">	<!--navigation menu sticky-->
+		<span style="vertical-align:top;float: left; padding-left: 10px">		PLS2</span>
+		<!--<img src="images/mstile.png" style="width:40px;float: left;">-->
+	 </div>
+	<div class="vid">
+		<video style="width: auto;" src="images/video-bg.mp4" autoplay loop style="width: auto;height:100%">
+		</video>
+		<div class="imgovervid">
+			
+			<span style="color: white;">
+				<h2>
+					Programming Language Suggestion System
+				</h2>
+				<img src="images/mstile.png" style="width: 20%">
+			</span>
+		</div>
+	 </div>
+	
+	<div style="height: auto; background-color: #060606;z-index: 1; position: relative; padding: 30px 0;"><!--use position relative to enable    the overlapping of the elements -->
+		<h1>
+			TRY THE EASIEST WAY!
+			<!--<br>TRY PLS2!<br>-->
+		</h1>
+		<SPAN>
+			PLS2 lets you select the best suited programming language as per your needs and plans.
+		</SPAN>
+		<BR />
+   <!--
+					
+		<div class="start">
+			<a href="exp.htm">
+				<span>GET STARTED</span>
+			</a>   
+		</div>
+	-->
+	<form name="myform" action="/cgi-bin/enginePLS2.py" method="POST">
+		<button class="start" type="submit" name="qGroup" value="start"><span style="font-size: 33px;">Get Started</span>	</button>
+	</form>
+</div>
+	<!--
+		 <div style="height: 500px; margin: 5px;border-radius: 2%;">
+	 		<h2>
+	 			LANGUAGES WE SUPPORT:-
+	 		</h2>
+	 		</div>
+	-->
+
+	<div style="width: 100%" class="containerouter">
+		MEET THE TEAM:-
+			<br>
+		<div class="container">
+			<img src="images/avatarf.png" alt="AMAN SAXENA" class="avatar">
+			<div class="middle">
+				<div class="text">
+					Mansi
+				</div>
+			</div>
+				<div class="facebook">
+					<a href="aman.saxena.com">
+						<i class="fa fa-facebook-square" style="font-size:24px;color: white;"></i>
+					</a>
+				</div>
+				<div class="github">
+					<a href="aman.saxena.com">
+						<i class="fa fa-github" style="font-size:24px;color: white;"></i> 
+					</a>
+				</div>
+				<div class="linkedin">
+					<a href="aman.saxena.com">
+						<i class="fa fa-linkedin-square" style="font-size:36px;color: white;"></i>
+					</a>
+				</div>
+		</div>
+		<div class="container">
+			<img src="images/avatar1.png" alt="AMAN SAXENA" class="avatar">
+			<div class="middle">
+				<div class="text">
+					Shashank
+				</div>
+			</div>
+				<div class="facebook">
+					<a href="aman.saxena.com">
+						<i class="fa fa-facebook-square" style="font-size:24px;color: white;"></i>
+					</a>
+				</div>
+				<div class="github">
+					<a href="aman.saxena.com">
+						<i class="fa fa-github" style="font-size:24px;color: white;"></i> 
+					</a>
+				</div>
+				<div class="linkedin">
+					<a href="aman.saxena.com">
+						<i class="fa fa-linkedin-square" style="font-size:36px;color: white;"></i>
+					</a>
+				</div>
+		</div>
+		<div class="container">
+			<img src="images/avatar2.png" alt="AMAN SAXENA" class="avatar">
+			<div class="middle">
+				<div class="text">
+					AMAN 
+				</div>
+			</div>
+				<div class="facebook">
+					<a href="https://www.facebook.com/profile.php?id=100012337819122">
+						<i class="fa fa-facebook-square" style="font-size:24px;color: white;"></i>
+					</a>
+				</div>
+				<div class="github">
+					<a href="https://github.com/amansaxna">
+						<i class="fa fa-github" style="font-size:24px;color: white;"></i> 
+					</a>
+				</div>
+				<div class="linkedin">
+					<a href="https://www.linkedin.com/in/aman-saxena-as">
+						<i class="fa fa-linkedin-square" style="font-size:36px;color: white;"></i>
+					</a>
+				</div>				
+		</div>
+	 </div>
+	<div class="fotter">
+		<i style="    vertical-align: super;">&reg</i> PLS2
+		<br />
+		Copyright © 2018 PLS2. All rights reserved. 
+		<BR />
+		<a href="aman.saxena.com">
+			<i class="fa fa-facebook-square" style="font-size:20px"></i>
+		</a>
+		  -
+		<i class="fa fa-github" style="font-size:20px"></i> - 
+		<i class="fa fa-linkedin-square" style="font-size:20px"></i>
+
+	 </div>
+	<div class="progress-bar"></div>
+	<script src="js/scrollProgress.js"></script>
+	<script>
+		window.addEventListener('load', function() {
+      setTimeout(function() {
+        var progressBar = document.querySelector('.progress-bar');
+        function onProgress(x, y) {
+          console.log(x, y)
+          progressBar.style.width = y * 100 + '%';
+        }
+        self.progressObserver = new ScrollProgress(onProgress);
+      }, 100)
+    });
+	</script>
+	<div class="endborder"></div>
+
+</body>
+</html>

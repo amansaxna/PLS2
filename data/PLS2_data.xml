@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<DATA>
+		<!-- Question groups -->
+		
+		<!-- 1. Start -->
+		<start type="qGroup" mQues="Why do you want to learn programming?">
+			<resp rtype="prog" rvalue="Scratch">For Kids</resp>
+			<resp rtype="qGroup" rvalue="makeMoney">Make Money</resp>
+			<resp rtype="prog" rvalue="Python">I don't know just pick one for me</resp>
+			<resp rtype="qGroup" rvalue="haveAnIdea">Just for fun</resp>
+			<resp rtype="qGroup" rvalue="haveAnIdea">I'm interested</resp>
+			<resp rtype="qGroup" rvalue="haveAnIdea">Improve myself</resp>
+		</start>
+		
+		<!-- 2. Make money -->
+		<makeMoney type="qGroup" mQues="How do you want to make money?">
+			<resp rtype="qGroup" rvalue="platformfield1">Get a Job</resp>
+			<resp rtype="qGroup" rvalue="platformfield2">I have a startup idea</resp>
+		</makeMoney>
+
+		<!-- 3. Have an Idea? -->
+		<haveAnIdea type="qGroup" mQues="Have a brilliant idea/platform in mind?">
+			<resp rtype="qGroup" rvalue="platformfield2">YES</resp>
+			<resp rtype="qGroup" rvalue="learningPreference">Nope. Just want to get started</resp>
+		</haveAnIdea>
+
+		<!-- 4. Platform field 1 -->
+		<platformfield1 type="qGroup" mQues="Which platform/field?">
+			<resp rtype="qGroup" rvalue="bigCompanies">I want to work for big tech companies</resp>
+			<resp rtype="prog" rvalue="Java">Doesn't matter, I just want money</resp>
+			<resp rtype="qGroup" rvalue="web1">Web</resp>
+			<resp rtype="qGroup" rvalue="microsoft">Enterprise</resp>
+			<resp rtype="qGroup" rvalue="mobile">Mobile</resp>
+			<resp rtype="prog" rvalue="cpp">3D/Gaming</resp>
+		</platformfield1>
+
+		<!-- 5. Platform field 2 -->
+		<platformfield2 type="qGroup" mQues="Which platform/field?">
+			<resp rtype="prog" rvalue="cpp">3D/Gaming</resp>
+			<resp rtype="qGroup" rvalue="mobile">Mobile</resp>
+			<resp rtype="qGroup" rvalue="microsoft">Enterprise</resp>
+			<resp rtype="qGroup" rvalue="web2">Web</resp>
+		</platformfield2>
+
+		<!-- 6. Learning Preference -->
+		<learningPreference type="qGroup" mQues="I prefer learning things...">
+			<resp rtype="prog" rvalue="Python">The easy way</resp>
+			<resp rtype="prog" rvalue="Python">The best way</resp>
+			<resp rtype="prog" rvalue="Java">The slightly harder way(like an automatic car)</resp>
+			<resp rtype="prog" rvalue="C">The slightly harder way(like a manual car)</resp>
+			<resp rtype="prog" rvalue="cpp">The really hard way</resp>
+		</learningPreference>
+
+		<!-- 7. Big Companies -->
+		<bigCompanies type="qGroup" mQues="Select one of the following...">
+			<resp rtype="prog" rvalue="Python">Google</resp>
+			<resp rtype="prog" rvalue="csharp">Microsoft</resp>
+			<resp rtype="prog" rvalue="Python">Facebook</resp>
+			<resp rtype="prog" rvalue="Objective-C">Apple</resp>
+		</bigCompanies>
+
+		<!-- 8. Web 1 -->
+		<web1 type="qGroup" mQues="What do you want to develop?">
+			<resp rtype="prog" rvalue="JavaScript">front-end (web interface)</resp>
+			<resp rtype="qGroup" rvalue="web1Ques">back-end ("brain" behind a website)</resp>
+		</web1>
+
+		<!-- 9. Web 2 -->
+		<web2 type="qGroup" mQues="Does your web app provides info in real-time, like twitter?">
+			<resp rtype="prog" rvalue="JavaScript">YES</resp>
+			<resp rtype="qGroup" rvalue="hugePotential">NO</resp>
+		</web2>
+
+		<!-- 10. Microsoft -->
+		<microsoft type="qGroup" mQues="What do think about Microsoft?">
+			<resp rtype="prog" rvalue="csharp">I'm a fan</resp>
+			<resp rtype="prog" rvalue="Java">Not bad</resp>
+			<resp rtype="prog" rvalue="Java">It sucks</resp>
+		</microsoft>
+
+		<!-- 11. Mobile -->
+		<mobile type="qGroup" mQues="Which OS?">
+			<resp rtype="prog" rvalue="Objective-C">iOS</resp>
+			<resp rtype="prog" rvalue="Java">Android</resp>
+		</mobile>
+
+		<!-- 12. Web 1 Ques -->
+		<web1Ques type="qGroup" mQues="I want to work for...">
+			<resp rtype="qGroup" rvalue="microsoft">Corporate</resp>
+			<resp rtype="qGroup" rvalue="hugePotential">Startup</resp>
+		</web1Ques>
+
+		<!-- 13. Huge Potential -->
+		<hugePotential type="qGroup" mQues="Do you want to try something with huge potential but less mature?">
+			<resp rtype="prog" rvalue="JavaScript">YES</resp>
+			<resp rtype="qGroup" rvalue="toyQues">Not Sure</resp>
+			<resp rtype="qGroup" rvalue="toyQues">NO</resp>
+		</hugePotential>
+
+		<!-- 14. Toy Ques -->
+		<toyQues type="qGroup" mQues="Which one is your favourite toy?">
+			<resp rtype="prog" rvalue="Python">Lego</resp>
+			<resp rtype="prog" rvalue="Ruby">Play-Doh</resp>
+			<resp rtype="prog" rvalue="PHP">I have an old and ugly toy but I like it very much</resp>
+		</toyQues>
+
+		<!-- Programming Languages -->
+		
+		<!-- 1. C -->
+		<C name="C" type="prog" website="www.random.com" logo="c_logo.png">C is a procedural programming language developed by Dennis Ritchie, mainly as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, clean style and available in all platfroms, making C language suitable for system programming like operating system or compiler development.</C>
+
+		<!-- 2. Java -->
+		<Java name="Java" type="prog" website="www.oracle.com/java" logo="java_logo.png">Java is a general-purpose programming language that is concurrent, class-based and object-oriented. It is based on "Write Once Run Anywhere" (WORA), i.e., a compiled Java code can run on all platfroms that support Java without the need for recompilation. Java is fast, reliable, secure and platfrom-independent with a large standard library.</Java>
+		
+		<!-- 3. Ruby -->
+		<Ruby name="Ruby" type="prog" website="www.ruby-lang.org" logo="ruby.png">Ruby is a dynamic, reflective, object-oriented, general-purpose programming language designed and developed by Yukihiro "Matz" Matsumoto in Japan in mid 90's. Ruby supports multiple programming paradigms and has a dynamic type system and automatic memory management.</Ruby>
+
+		<!-- 4. PHP -->
+		<PHP name="PHP" type="prog" website="www.php.org" logo="php_logo.png">PHP is a server-side scripting language designed by Rasmus Lerdorf in 1994 for web development but also used as a general-purpose programming language. PHP originally stood for Personal Home Page, but now it stands for Hypertext Preprocessor. PHP code may be embedded into HTML code, or can be used in combination with various web template systems, web content management systems and web frameworks.</PHP>
+
+		<!-- 5. JavaScript -->
+		<JavaScript name="JavaScript" type="prog" website="www.javascript.com" logo="javascript_logo.png">JavaScript was designed by Brendan Eich. It is a high-level interpreted programming language with first-class functions and is characterized as dynamic, weakly typed, prototype-based and multi-paradigm. It is used to make webpages interactive and create dynamic conten like a popup message or a live clock.</JavaScript>
+
+		<!-- 6. Objective-C -->
+		<Objective-C name="Objective-C" type="prog" website="www.developer.apple.com" logo="objectivec_logo.png">Objective-C is the primary programming language used when writing software for OS X and iOS. It is a superset of the C programming language and provides object-oriented capabilities and a dynamic runtime.</Objective-C>
+
+		<!-- 7. C# -->
+		<csharp name="C#" type="prog" website="www.docs.microsoft.com/en-us/dotnet/csharp/" logo="csharp_logo.png">C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented and component-oriented programming disciplines. It was developed by Microsoft within its .NET initiative.</csharp>
+
+		<!-- 8. C++ -->
+		<cpp name="C++" type="prog" website="www.isocpp.org" logo="cpp_logo.png">C++ is a general-purpose programming language designed by Bjarne Stroustrup in 1979. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. C++ runs on a variety of platforms such as Windows, Mac OS, and the various versions of UNIX.</cpp>
+
+		<!-- 9. Python -->
+		<Python name="Python" type="prog" website="www.python.org" logo="python_logo.png">Python is a powerful high-level, object-oriented programming language created by Guido van Rossum. It has simple easy-to-use syntax, making it the perfect language for someone trying to learn programming for the first time.</Python>
+
+		<!-- 10. Scratch -->
+		<Scratch name="Scratch" type="prog" website="scratch.mit.edu" logo="scratch_logo.png">Scratch is a free educational programming language developed by the Lifelong Kindergarten Group at MIT. It is a visual programming language, using which users create their own interactive stories, games and animations, then share and discuss their creations with one another.</Scratch>
+
+<!---
+
+>>> import xml.etree.ElementTree as ET
+>>> tree = ET.parse('test.xml')
+>>> root = tree.getroot()
+>>> tmp = root.find('start')
+>>>
+>>> for i, all in enumerate(tmp.iter('resp')):
+...     print(all.tag + str(i) + " : type=  " + all.get('rtype') + " value = " + all.get('rvalue') + " str = " + all.text)
+...
+resp0 : type=  prog value = Scratch str = For Kids
+resp1 : type=  qGroup value = makeMoney str = Make Money
+resp2 : type=  prog value = Python str = I don't know just pick one for me
+resp3 : type=  qGroup value = haveAnIdea str = Just for fun
+resp4 : type=  qGroup value = haveAnIdea str = I'm interested
+resp5 : type=  qGroup value = haveAnIdea str = Improve myself
+
+-->
+
+	</DATA>

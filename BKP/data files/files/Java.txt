@@ -1,0 +1,1 @@
+Java; www.oracle.com/java/; Java is a general-purpose programming language that is concurrent, class-based and object-oriented. It is based on "Write Once Run Anywhere" (WORA), i.e., a compiled Java code can run on all platfroms that support Java without the need for recompilation. Java is fast, reliable, secure and platfrom-independent with a large standard library.

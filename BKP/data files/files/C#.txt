@@ -1,0 +1,1 @@
+C#; www.docs.microsoft.com/en-us/dotnet/csharp/; C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented and component-oriented programming disciplines. It was developed by Microsoft within its .NET initiative.

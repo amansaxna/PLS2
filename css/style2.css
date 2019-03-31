@@ -1,0 +1,149 @@
+
+/* =============================================================================
+   css -PLS2
+   ========================================================================== */
+
+/* ---- base ---- */
+		@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+		@import url('https://fonts.googleapis.com/css?family=Faster+One');
+		body
+		{
+		  background: #222222;
+		  color: black;
+		  text-align: center;
+		  font-family: 'Kristen ITC', cursive;
+		  font-size: 1em ;
+		  letter-spacing: 1px;
+		  }
+/*using grid system try 3---4:45  9 feb 2018*/
+		.item1 { grid-area: image; }             /*naming the grids*/
+		.item2 { grid-area: name; }
+		.item3 { grid-area: address; }
+		.item4 { grid-area: theory; }
+		.item5 { grid-area: get_started; }
+		/*defining the grid containers */
+		.grid-container {
+		  display: grid;
+		  grid-template-areas:                              /*setting numbers of columns folllowed by rows on next line*/
+		    'image name'									/*column1 column2*/
+		    'address address'
+		    'theory theory'
+		    'get_started get_started'  ;
+		  grid-gap: 10px;									/*defing the gap between the grid columns and rows*/
+		  background-color: white;
+		  padding: 10px;
+		  width: auto;
+		  margin: auto;										/*to define that the div element makes to the center*/
+		  margin-top: 5%;     							/*setting the margine on the top of the div element*/
+		  border-radius: 20px;	                            /*adding corner radius to the div*/
+		  box-shadow:  0 0 10px black;
+		  margin-left: 20vw;
+		  margin-right: 24vw;
+		}
+		.grid-container > div {								/*settings for div elements inside the grid container*/
+		  /*background-color: red;*/
+		  text-align: center;
+		  padding: 12px 0;									/*padding:top right bottom left order*/
+		  font-size: 85%;									/*defining the font size AT 100 according to the window size* */
+		  margin: auto;
+		}
+		/*resettings the properties of the elemets when the screen size/width is less than 600px,500px,400px*/
+
+		@media only screen and (max-width: 600px)			
+		{
+		  .grid-container 
+		  {
+		    grid-template-areas:                              /*setting numbers of columns folllowed by rows on next line*/
+		    'image '
+		    'name'
+		    'address'
+		    'theory'
+		    'get_started';  
+		  } 
+		  	.grid-container 
+		  	{
+				margin-left: 15%;margin-right: 15%
+			} 
+		   
+		}
+		@media only screen and (max-width: 500px)			
+		{
+			.grid-container 
+			{
+				margin-left: 4vw;
+				margin-right: 5vw;
+			}
+		}
+		@media only screen and (max-width: 400px)			
+		{
+			.grid-container 
+					{
+						margin-left: 2vw;
+						margin-right: 2vw;
+						background-color: transparent;
+						color: white;
+						box-shadow:  0 0 0 0;
+						margin: 0px;
+						padding: 0px;
+						width: auto;
+						margin-top: 0px;
+						margin-left: 0px;
+						margin-right: 6px;
+					}
+			
+		}
+		img:hover 
+		{
+		  /*box-shadow: 0 0 1px 1px pink;*/
+		  opacity: 0.8;
+		  }
+
+		.start
+		{
+			/*width:300px;*/
+			width: auto;
+			background-color: white;
+			border: 1px solid;
+			border-radius: 10px ;
+			padding: 8px;
+			cursor: pointer;
+			/*margin: auto;
+			margin-top: 40px;*/
+			padding: 20px;
+			transition: 0.8s ease;
+			font-family: 'Faster One', cursive;
+
+		}
+		.start span
+		{
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+		.start span:after /*add >> after the text(span content)*/
+		{
+		  content: '\00bb';
+		  color: blue;
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -70px;
+		  transition: 0.6s;
+		}
+		.start:hover  
+		{
+		  background-color: blue;
+		  color: white;
+		}
+		.start:hover span /*add a padding extra to the right when hovern to fit the pseudo :after contenr(<<)*/
+		{
+		  padding-right: 25px;
+		  color: white;
+		}
+		.start:hover span:after 
+		{
+		  opacity: 1;
+		  right: 0;
+		  color: white;
+		}

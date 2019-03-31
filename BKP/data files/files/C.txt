@@ -1,0 +1,1 @@
+C; ***; C is a procedural programming language developed by Dennis Ritchie, mainly as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, clean style and available in all platfroms, making C language suitable for system programming like operating system or compiler development.

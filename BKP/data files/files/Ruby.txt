@@ -1,0 +1,1 @@
+Ruby; www.ruby-lang.org; Ruby is a dynamic, reflective, object-oriented, general-purpose programming language designed and developed by Yukihiro "Matz" Matsumoto in Japan in mid 90's. Ruby supports multiple programming paradigms and has a dynamic type system and automatic memory management.

@@ -1,0 +1,1 @@
+Does your web app provides info in real-time, like twitter?: YES$: NO; JavaScript: hugePotential

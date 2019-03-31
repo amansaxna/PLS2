@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"><title>PLS2</title>
+  		
+  		<!-- Javascript information -->
+		<script src="/js/userSelect.js"></script>
+		
+  		<!-- CSS information -->
+		<link rel="stylesheet" href="css/reset.min.css">
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto'>
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Favicon information -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#8cd652">
+	
+	</head>
+
+	<body>
+
+	<div class="alert">
+		<h2>PLS2</h2>
+		<p>Programming Language Suggestion System (PLS2) lets you select a programming language based on your needs.<p>
+	</div>
+
+	<form name="myform" action="/cgi-bin/enginePLS2.py" method="POST">
+
+	<div class="container"><h2>Why do you want to learn programming?</h2><br>
+
+		<ul>
+			<li><input type="radio" id="a-option" name="prog" value="Scratch" onclick="setTimeout(submitform, 500)">
+				<label for="a-option">For Kids</label><div class="check"><div class="inside"></div></div>
+			</li>
+
+			<li><input type="radio" id="b-option" name="qGroup" value="makeMoney" onclick="setTimeout(submitform, 500)">
+				<label for="b-option">Make Money</label><div class="check"><div class="inside"></div></div>
+			</li>
+
+			<li><input type="radio" id="c-option" name="prog" value="Python" onclick="setTimeout(submitform, 500)">
+				<label for="c-option">I don't know just pick one for me</label><div class="check"><div class="inside"></div></div>
+			</li>
+
+			<li><input type="radio" id="d-option" name="qGroup" value="haveAnIdea" onclick="setTimeout(submitform, 500)">
+				<label for="d-option">Just for fun</label><div class="check"><div class="inside"></div></div>
+			</li>
+
+			<li><input type="radio" id="e-option" name="qGroup" value="haveAnIdea" onclick="setTimeout(submitform, 500)">
+				<label for="e-option">I'm interested</label><div class="check"><div class="inside"></div></div>
+			</li>
+
+			<li><input type="radio" id="f-option" name="qGroup" value="haveAnIdea" onclick="setTimeout(submitform, 500)">
+				<label for="f-option">Improve myself</label><div class="check"><div class="inside"></div></div>
+			</li>
+
+		</ul>
+	</div>
+	</form>
+
+	<div class="signature"><p>Made with <i class="much-heart"></i> by Mansi, Aman and Shashank</p></div>
+
+	</body>
+</html>

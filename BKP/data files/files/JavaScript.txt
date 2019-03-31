@@ -1,0 +1,1 @@
+JavaScript; www.javascript.com; JavaScript is a high-level interpreted programming language with first-class functions and is characterized as dynamic, weakly typed, prototype-based and multi-paradigm. It is used to make webpages interactive and create dynamic conten like a popup message or a live clock.

@@ -1,0 +1,303 @@
+/*front page css */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+		@import url('https://fonts.googleapis.com/css?family=Faster+One');
+		html,body
+		{
+			margin: 0px;
+			padding: 0px;
+			/*overflow-x: hidden;*/
+			font-family: 'Comfortaa', cursive;
+			text-align: center;
+			background-color: #060606;
+			/*color: #00a000 !important;*/
+		}
+		div
+		{
+			background-color: #060606;
+			/*border: 1px solid black;*/
+			width: auto;
+			font-size: 30px;
+			color: white;
+			font-family: 'Comfortaa', cursive;
+		}
+		#navbar
+		{
+			background-color: #222;
+			border-radius: 0 0 10px 0;
+			border: 1px solid black;
+			position: sticky;
+			top: 0px;
+			width: 100%;
+			height: 50px;
+			/*height: 6vw;max-height: 50px;  /*--vw- view pont height --*/			box-sizing: 100px;
+			font-size: 60px;
+
+
+    		font-family: 'Faster One', cursive;
+			/*src: url('FasterOne-Regular.ttf');*/
+			/*align-content: center;
+			text-align: center;*/
+			padding: 20px 0;
+			z-index: 2;
+			opacity: 0.8;
+			transition: top 0.3s; /* Transition effect when sliding down (and up) */
+			box-shadow: 0px 10px 53px black;
+			color:  #f9ea03 !important;
+			/*color: #00a000 !important;*/
+		}
+		.vid
+		{
+			background-color: black;
+			z-index: -1;
+			height: 400px;
+      		background-repeat: no-repeat; 
+      		background-size: cover;	
+      		overflow: hidden;
+      	}
+      	.imgovervid
+      	{
+      		position: absolute;
+      		top: 45%;
+      		left: 50%;
+      		transform: translate(-50%, -50%);
+      		background-color: transparent;
+			border: 0px;
+      	}
+/*      	.screenshot
+      	{
+      		background-image: url(google); 
+      		background-size: contain;	
+      		height: 400px;
+      		background-attachment: fixed;
+      	}*/
+		.containerouter
+		{
+			position: relative;
+						padding: 30px 0;
+		}
+		.container
+		{
+			position: relative;
+			display: inline-block;
+			border: 0px;
+		}
+		.middle
+		{
+			position: absolute;
+			border: 0px solid black;
+			opacity: 0;   
+			top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    transition:  .5s ease;
+
+		}
+		.avatar {
+		    vertical-align: middle;
+		    width: 276px;
+		    height: 276px;
+		    border-radius: 50%;
+		    padding: 30px;
+		    transition: .5s ease;
+		    position: relative;
+		}
+		.avatar:hover
+		{
+			opacity: 0.4;
+		}
+		.text {
+		  background-color: #4CAF50;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+		.facebook
+		{
+			position: absolute;
+    		bottom: 69px;
+			right: 104px;
+    		opacity: 0;
+    		border: 0;
+			background-color: transparent;    		
+		}
+		.container:hover .facebook
+		{
+			opacity: 1;
+		}
+		.github
+		{
+			position: absolute;
+    		bottom: 69px;
+			right: 239px;
+    		opacity: 0;
+    		border: 0;
+			background-color: transparent;
+    		
+		}
+		.container:hover .github
+		{
+			opacity: 1;
+		}
+		.linkedin
+		{
+			position: absolute;
+    		bottom: 69px;
+			right: 167px;
+    		opacity: 0;
+    		border: 0;
+			background-color: transparent;
+		}
+		.container:hover .linkedin
+		{
+			opacity: 1;
+		}
+		.container:hover .middle {
+		  opacity: 1;
+		}
+		.fotter
+		{
+			background-image: url(/images/index.png);
+			background-position: right;
+			background-size: contain;
+			/*box-shadow: 10px 10px 5% black;*/
+			background-repeat: no-repeat;
+			border-top: 1px solid white;
+			height: auto;
+			padding: 40px 0;
+			text-align: center;
+			position: static;
+		}
+		.endborder
+		{
+			background: linear-gradient(to right ,red , yellow ,blue ,green );
+			padding: 5px;
+			border-radius: 12px 12px 12px 12px;
+		}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+		@media only screen and (max-width: 600px) 
+		{
+			#navbar
+			{
+				font-size: 40px;
+				height: 40px;
+			}
+			.text {
+		  background-color: #4CAF50;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+		.facebook
+		{
+			position: absolute;
+    		bottom: 1px;
+			right: 71px;
+    		opacity: 1;
+    		border: 0;
+			background-color: transparent;    		
+		}
+		.github
+		{
+			position: absolute;
+    		bottom: 1px;
+			right: 248px;
+    		opacity: 1;
+    		border: 0;
+			background-color: transparent;
+    		
+		}
+		.linkedin
+		{
+			position: absolute;
+    		bottom: -10px;
+			right: 154px;
+    		opacity: 1;
+    		border: 0;
+			background-color: transparent;
+			z-index: 100;
+		}
+		.middle 
+		{
+		    position: absolute;
+		    border: 0px solid black;
+		    opacity: 1;
+		    top: 74%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    transition: .5s ease;
+		}		
+		}
+		@media only screen and (max-width: 500px) 
+		{
+
+		}
+		 @media only screen and (max-width: 400px) 
+		{
+	    	body
+	     	{
+
+	    	}
+		    div
+		    {
+	    		font-size: 15px;
+		    }
+		}
+		@media only screen and (max-width: 300px) 
+		{
+
+		}
+		.start
+		{
+			width:315px;
+			background-color: transparent;
+			border: 1px solid white;
+			color: blue;
+			border-radius: 10px ;
+			padding: 8px;
+			cursor: pointer;
+			margin: auto;
+			margin-top: 40px;
+			padding: 20px;
+			transition: 0.8s ease;
+			font-family: 'Faster One', cursive;
+		}
+		.start span
+		{
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+		.start span:after /*add >> after the text(span content)*/
+		{
+		  content: '\00bb';
+		  color: blue;
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -20px;
+		  transition: 0.6s;
+		}
+		.start:hover  
+		{
+		  background-color: white;
+		  
+		}
+		.start:hover span /*add a padding extra to the right when hovern to fit the pseudo :after contenr(<<)*/
+		 {
+		  padding-right: 25px;
+		}
+		.start:hover span:after 
+		{
+		  opacity: 1;
+		  right: 0;
+		}
+		.progress-bar {
+	      background-color: #f9ea03;
+	      top: 0px;
+	      position: fixed;
+	      height: 7px;
+	      left: 0;
+	      z-index: 1000;
+	    }
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
